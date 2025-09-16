@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Joga Junto</title>
+    <link rel="stylesheet" href="../css/gamezone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <h1 class="logo">JOGA <span class="junto"><br>JUNTO</span></h1>
+                <div class="search-container">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" class="search-input" placeholder="Buscar jogadoras...">
+                </div>
+                <div class="header-actions">
+                    <button class="btn-icon">☰</button>
+                </div>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/estatisticas.html" class="nav-link">Estatísticas</a></li>
+                    <li><a href="../pages/inspirações.html" class="nav-link">Inspirações</a></li>
+                    <li><a href="../pages/fanzone.html" class="nav-link">FanZone</a></li>
+                    <li><a href="../pages/gamezone.html" class="nav-link active">GameZone</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Monte sua escalação dos sonhos</h1>
+                <p class="hero-subtitle">Colete cards exclusivos e use seus <strong>Passa Points</strong> para
+                    liberar novas jogadoras!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <div class="container gamezone-grid">
+
+            <!-- Cartinhas disponíveis -->
+            <section class="cards-section">
+                <h2 class="section-title">Minhas Cartinhas</h2>
+                <div class="cards-grid">
+                    <div class="card-jogadora">
+                        <img src="../img/gabizanotti.jpg" alt="Gabi Zanotti">
+                        <h3>Gabi Zanotti</h3>
+                        <p>Meia • Corinthians</p>
+                        <button class="btn-escalar">Escalar</button>
+                    </div>
+                    <div class="card-jogadora">
+                        <img src="../img/amanda.jpg" alt="Amanda Gutierres">
+                        <h3>Amanda Gutierres</h3>
+                        <p>Atacante • Palmeiras</p>
+                        <button class="btn-escalar">Escalar</button>
+                    </div>
+                    <div class="card-jogadora bloqueada">
+                        <img src="../img/thais.jpg" alt="Thaís Ferreira">
+                        <h3>Thaís Ferreira</h3>
+                        <p>Zagueira • Corinthians</p>
+                        <span class="lock">🔒 200 PP</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Campo de escalação -->
+            <section class="campo-section">
+                <div class="saldo">
+                    <h3>💰 Passa Points: <span class="pp-value">350</span></h3>
+                </div>
+                <h2 class="section-title">Minha Escalação</h2>
+                <div class="campo">
+                    <div class="posicao">⚽ Goleira</div>
+                    <div class="posicao">⚽ Defesa</div>
+                    <div class="posicao">⚽ Meio</div>
+                    <div class="posicao">⚽ Ataque</div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Escolha de formação -->
+    <section class="formacoes-section">
+        <h2 class="section-title">Escolha sua Formação</h2>
+        <div class="formacoes-container">
+
+            <!-- Lista de formações -->
+            <ul class="lista-formacoes">
+                <li class="formacao-item active" data-formacao="4-4-2">4-4-2</li>
+                <li class="formacao-item" data-formacao="4-5-1">4-5-1</li>
+            </ul>
+
+            <!-- Campo mostrando a formação -->
+            <div class="formacao-preview">
+                <div class="campo-preview">
+                    <!-- Exemplo de posições (aqui você pode ajustar os grid rows pra simular cada formação) -->
+                    <h3>Formação: <span id="formacao-nome">4-4-2</span></h3>
+                    <div class="linha">
+                        <div class="posicao">⚽</div>
+                    </div>
+                    <div class="linha">
+                        <div class="posicao">⚽</div>
+                        <div class="posicao">⚽</div>
+                    </div>
+                    <div class="linha">
+                        <div class="posicao">⚽</div>
+                        <div class="posicao">⚽</div>
+                        <div class="posicao">⚽</div>
+                        <div class="posicao">⚽</div>
+                    </div>
+                    <div class="linha">
+                        <div class="posicao">⚽</div>
+                        <div class="posicao">⚽</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+
+</html>

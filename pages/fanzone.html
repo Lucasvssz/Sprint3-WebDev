@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joga Junto - Portal de Notícias Esportivas</title>
+    <meta name="description"
+        content="Acompanhe as últimas notícias esportivas, placares ao vivo e estatísticas dos seus esportes favoritos no SportsPurple">
+    <link rel="stylesheet" href="../css/fanzone.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <h1 class="logo">JOGA <span class="junto"><br>JUNTO</span></h1>
+
+                <div class="search-container">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" class="search-input" placeholder="Buscar notícias, times, jogadores...">
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-icon">☰</button>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/estatisticas.html" class="nav-link">Estatisticas</a></li>
+                    <li><a href="../pages/inspirações.html" class="nav-link">Inspirações</a></li>
+                    <li><a href="../pages/fanzone.html" class="nav-link">FanZone</a></li>
+                    <li><a href="../pages/gamezone.html" class="nav-link">GameZone</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <div>
+                    <section>
+                        <h2 class="section-title">FanZone - Posts Recentes</h2>
+                        <div class="posts-grid">
+
+                            <form id="form-comentario">
+                                <textarea id="texto" rows="3" placeholder="Faça seu comentário.."></textarea>
+                                <button type="submit">Postar</button>
+                            </form>
+
+                            <!-- Post de Jogadora -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <img src="../img/gabizanotti.jpg" alt="Gabi Zanotti" class="post-avatar">
+                                    <div>
+                                        <h3 class="post-author">Gabi Zanotti</h3>
+                                        <span class="post-role">Jogadora - Corinthians</span>
+                                    </div>
+                                </div>
+                                <p class="post-content">Muito feliz com a vitória de hoje! Obrigada pelo apoio da
+                                    torcida! 💜⚽</p>
+                                <div class="post-footer">
+                                    <span class="post-time">🕒 2 horas atrás</span>
+                                    <span class="post-likes">❤️ 120</span>
+                                </div>
+                            </article>
+
+                            <!-- Post de Clube -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <img src="../img/logo-do-corinthians-4096.png" alt="Corinthians"
+                                        class="post-avatar">
+                                    <div>
+                                        <h3 class="post-author">Corinthians</h3>
+                                        <span class="post-role">Clube</span>
+                                    </div>
+                                </div>
+                                <p class="post-content">Confira os melhores momentos do jogo de hoje no Brasileirão
+                                    Feminino! #VaiCorinthians</p>
+                                <div class="post-footer">
+                                    <span class="post-time">🕒 4 horas atrás</span>
+                                    <span class="post-likes">❤️ 300</span>
+                                </div>
+                            </article>
+
+                            <!-- Post de Fã -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <img src="../img/logofan.jpg" alt="Fan" class="post-avatar">
+                                    <div>
+                                        <h3 class="post-author">Maria Silva</h3>
+                                        <span class="post-role">Fã / Aspirante a Jogadora</span>
+                                    </div>
+                                </div>
+                                <p class="post-content">Meu sonho é jogar profissionalmente e inspirar outras meninas
+                                    como eu! 💜⚽</p>
+                                <div class="post-footer">
+                                    <span class="post-time">🕒 6 horas atrás</span>
+                                    <span class="post-likes">❤️ 85</span>
+                                </div>
+                            </article>
+
+                            <!-- Post de Jogadora -->
+                            <article class="post-card">
+                                <div class="post-header">
+                                    <img src="../img/amanda.jpg" alt="Amanda Gutierres" class="post-avatar">
+                                    <div>
+                                        <h3 class="post-author">Amanda Gutierres</h3>
+                                        <span class="post-role">Jogadora - Palmeiras</span>
+                                    </div>
+                                </div>
+                                <p class="post-content">Treino pesado hoje, mas a dedicação vale a pena! Vamos que
+                                    vamos! 💪⚽</p>
+                                <div class="post-footer">
+                                    <span class="post-time">🕒 1 dia atrás</span>
+                                    <span class="post-likes">❤️ 210</span>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Top Jogadoras</h3>
+                        <ul class="top-players">
+                            <li>Gabi Zanotti</li>
+                            <li>Amanda Gutierres</li>
+                            <li>Thaís Ferreira</li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title">Posts Populares</h3>
+                        <ul class="popular-posts">
+                            <li>#VaiCorinthians</li>
+                            <li>#FutebolFeminino</li>
+                            <li>#InspireJovens</li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

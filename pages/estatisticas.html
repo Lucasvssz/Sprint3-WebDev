@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joga Junto - Portal de Notícias Esportivas</title>
+    <link rel="stylesheet" href="../css/estatisticas.css">
+    <meta name="description" content="Acompanhe as últimas notícias esportivas, placares ao vivo e estatísticas dos seus esportes favoritos no SportsPurple">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-top">
+                <h1 class="logo">JOGA <span class="junto"><br>JUNTO</span></h1>
+
+                <div class="search-container">
+                    <div class="search-icon">🔍</div>
+                    <input type="text" class="search-input" placeholder="Buscar notícias, times, jogadores...">
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-icon">☰</button>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../pages/estatisticas.html" class="nav-link">Estatisticas</a></li>
+                    <li><a href="../pages/inspirações.html" class="nav-link">Inspirações</a></li>
+                    <li><a href="../pages/fanzone.html" class="nav-link">FanZone</a></li>
+                    <li><a href="./pages/gamezone.html" class="nav-link">GameZone</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Estatísticas do Futebol Feminino</h1>
+                <p class="hero-subtitle ">Acompanhe rankings, estatísticas e análises completas do futebol feminino mundial</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="secao-filtros">
+        <div class="container">
+            <div class="filtros-container">
+                <div class="grupo-filtro">
+                    <label class="rotulo-filtro">Temporada</label>
+                    <select class="select-filtro">
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+                <div class="grupo-filtro">
+                    <label class="rotulo-filtro">Campeonato</label>
+                    <select class="select-filtro">
+                        <option>Todos os Campeonatos</option>
+                        <option>Brasileirão Feminino</option>
+                        <option>Copa do Mundo FIFA</option>
+                        <option>Liga dos Campeões</option>
+                        <option>Premier League</option>
+                    </select>
+                </div>
+                <div class="grupo-filtro">
+                    <label class="rotulo-filtro">Posição</label>
+                    <select class="select-filtro">
+                        <option>Todas as Posições</option>
+                        <option>Goleira</option>
+                        <option>Defensora</option>
+                        <option>Meio-campista</option>
+                        <option>Atacante</option>
+                    </select>
+                </div>
+                <div class="grupo-filtro">
+                    <label class="rotulo-filtro">Estatística</label>
+                    <select class="select-filtro">
+                        <option>Gols</option>
+                        <option>Assistências</option>
+                        <option>Jogos</option>
+                        <option>Defesas</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="conteudo-principal">
+        <div class="container">
+            <div class="grid-conteudo">
+                <div class="area-principal">
+                    <h2 class="titulo-secao">⚽ Estatísticas Gerais</h2>
+                    <div class="grid-cards-stats">
+                        <div class="card-estatistica">
+                            <div class="icone-card">⚽</div>
+                            <div class="valor-estatistica">1,247</div>
+                            <div class="rotulo-estatistica">Gols Marcados</div>
+                        </div>
+                        <div class="card-estatistica">
+                            <div class="icone-card">🏆</div>
+                            <div class="valor-estatistica">24</div>
+                            <div class="rotulo-estatistica">Campeonatos Ativos</div>
+                        </div>
+                        <div class="card-estatistica">
+                            <div class="icone-card">👥</div>
+                            <div class="valor-estatistica">856</div>
+                            <div class="rotulo-estatistica">Jogadoras Ativas</div>
+                        </div>
+                        <div class="card-estatistica">
+                            <div class="icone-card">🎯</div>
+                            <div class="valor-estatistica">67%</div>
+                            <div class="rotulo-estatistica">Precisão Média</div>
+                        </div>
+                    </div>
+
+                    <!-- Ranking de Artilheiras -->
+                    <div class="tabela-ranking">
+                        <div class="cabecalho-tabela">
+                            <h3 class="titulo-tabela">🥇 Ranking de Artilheiras - 2024</h3>
+                        </div>
+                        <table class="tabela">
+                            <thead class="cabecalho-tabela-row">
+                                <tr>
+                                    <th>Pos.</th>
+                                    <th>Jogadora</th>
+                                    <th>Gols</th>
+                                    <th>Jogos</th>
+                                    <th>Média</th>
+                                    <th>Assistências</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">1</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">M</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Marta Silva</div>
+                                                <div class="time-jogadora">Corinthians</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">28</span>
+                                    </td>
+                                    <td class="celula-tabela">22</td>
+                                    <td class="celula-tabela">1.27</td>
+                                    <td class="celula-tabela">12</td>
+                                </tr>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">2</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">D</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Debinha Santos</div>
+                                                <div class="time-jogadora">Palmeiras</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">25</span>
+                                    </td>
+                                    <td class="celula-tabela">20</td>
+                                    <td class="celula-tabela">1.25</td>
+                                    <td class="celula-tabela">8</td>
+                                </tr>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">3</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">G</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Geyse Ferreira</div>
+                                                <div class="time-jogadora">Santos</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">23</span>
+                                    </td>
+                                    <td class="celula-tabela">24</td>
+                                    <td class="celula-tabela">0.96</td>
+                                    <td class="celula-tabela">15</td>
+                                </tr>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">4</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">A</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Adriana Lima</div>
+                                                <div class="time-jogadora">São Paulo</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">21</span>
+                                    </td>
+                                    <td class="celula-tabela">23</td>
+                                    <td class="celula-tabela">0.91</td>
+                                    <td class="celula-tabela">9</td>
+                                </tr>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">5</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">C</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Cristiane Oliveira</div>
+                                                <div class="time-jogadora">Flamengo</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">19</span>
+                                    </td>
+                                    <td class="celula-tabela">21</td>
+                                    <td class="celula-tabela">0.90</td>
+                                    <td class="celula-tabela">11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Ranking de Assistências -->
+                    <div class="tabela-ranking">
+                        <div class="cabecalho-tabela">
+                            <h3 class="titulo-tabela">🎯 Ranking de Assistências - 2024</h3>
+                        </div>
+                        <table class="tabela">
+                            <thead class="cabecalho-tabela-row">
+                                <tr>
+                                    <th>Pos.</th>
+                                    <th>Jogadora</th>
+                                    <th>Assistências</th>
+                                    <th>Jogos</th>
+                                    <th>Gols</th>
+                                    <th>Participações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">1</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">G</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Geyse Ferreira</div>
+                                                <div class="time-jogadora">Santos</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">15</span>
+                                    </td>
+                                    <td class="celula-tabela">24</td>
+                                    <td class="celula-tabela">23</td>
+                                    <td class="celula-tabela">38</td>
+                                </tr>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">2</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">M</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Marta Silva</div>
+                                                <div class="time-jogadora">Corinthians</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">12</span>
+                                    </td>
+                                    <td class="celula-tabela">22</td>
+                                    <td class="celula-tabela">28</td>
+                                    <td class="celula-tabela">40</td>
+                                </tr>
+                                <tr class="linha-tabela">
+                                    <td class="celula-tabela">
+                                        <span class="posicao-ranking">3</span>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <div class="info-jogadora">
+                                            <div class="avatar-jogadora">C</div>
+                                            <div class="detalhes-jogadora">
+                                                <div class="nome-jogadora">Cristiane Oliveira</div>
+                                                <div class="time-jogadora">Flamengo</div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="celula-tabela">
+                                        <span class="estatistica-destaque">11</span>
+                                    </td>
+                                    <td class="celula-tabela">21</td>
+                                    <td class="celula-tabela">19</td>
+                                    <td class="celula-tabela">30</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <!-- Próximos Jogos -->
+                    <div class="card-sidebar">
+                        <h3 class="titulo-sidebar">
+                            📅 Próximos Jogos
+                            <span style="background: #dc2626; color: white; padding: 0.25rem 0.5rem; border-radius: 1rem; font-size: 0.75rem;">AO VIVO</span>
+                        </h3>
+                        <div class="lista-jogos">
+                            <div class="item-jogo">
+                                <div class="times-jogo">
+                                    <span class="nome-time">Corinthians</span>
+                                    <span class="placar">2 x 1</span>
+                                    <span class="nome-time">Palmeiras</span>
+                                </div>
+                                <div class="info-jogo">
+                                    <span>Brasileirão Feminino</span>
+                                    <span>67' - 2º Tempo</span>
+                                </div>
+                            </div>
+                            <div class="item-jogo">
+                                <div class="times-jogo">
+                                    <span class="nome-time">Santos</span>
+                                    <span class="placar">vs</span>
+                                    <span class="nome-time">São Paulo</span>
+                                </div>
+                                <div class="info-jogo">
+                                    <span>Brasileirão Feminino</span>
+                                    <span>16:00 - Domingo</span>
+                                </div>
+                            </div>
+                            <div class="item-jogo">
+                                <div class="times-jogo">
+                                    <span class="nome-time">Flamengo</span>
+                                    <span class="placar">vs</span>
+                                    <span class="nome-time">Internacional</span>
+                                </div>
+                                <div class="info-jogo">
+                                    <span>Brasileirão Feminino</span>
+                                    <span>18:30 - Domingo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Top Artilheiras -->
+                    <div class="card-sidebar">
+                        <h3 class="titulo-sidebar">🥇 Top Artilheiras</h3>
+                        <div class="lista-artilheiras">
+                            <div class="item-artilheira">
+                                <div class="numero-artilheira">1</div>
+                                <div class="info-artilheira">
+                                    <div class="nome-artilheira">Marta Silva</div>
+                                    <div class="time-artilheira">Corinthians</div>
+                                </div>
+                                <div class="gols-artilheira">28</div>
+                            </div>
+                            <div class="item-artilheira">
+                                <div class="numero-artilheira">2</div>
+                                <div class="info-artilheira">
+                                    <div class="nome-artilheira">Debinha Santos</div>
+                                    <div class="time-artilheira">Palmeiras</div>
+                                </div>
+                                <div class="gols-artilheira">25</div>
+                            </div>
+                            <div class="item-artilheira">
+                                <div class="numero-artilheira">3</div>
+                                <div class="info-artilheira">
+                                    <div class="nome-artilheira">Geyse Ferreira</div>
+                                    <div class="time-artilheira">Santos</div>
+                                </div>
+                                <div class="gols-artilheira">23</div>
+                            </div>
+                            <div class="item-artilheira">
+                                <div class="numero-artilheira">4</div>
+                                <div class="info-artilheira">
+                                    <div class="nome-artilheira">Adriana Lima</div>
+                                    <div class="time-artilheira">São Paulo</div>
+                                </div>
+                                <div class="gols-artilheira">21</div>
+                            </div>
+                            <div class="item-artilheira">
+                                <div class="numero-artilheira">5</div>
+                                <div class="info-artilheira">
+                                    <div class="nome-artilheira">Cristiane Oliveira</div>
+                                    <div class="time-artilheira">Flamengo</div>
+                                </div>
+                                <div class="gols-artilheira">19</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Estatísticas Rápidas -->
+                    <div class="card-sidebar">
+                        <h3 class="titulo-sidebar">📊 Stats Rápidas</h3>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: rgba(255, 255, 255, 0.7);">Média de Gols/Jogo</span>
+                                <span style="font-weight: bold; color: var(--cor-sucesso);">2.4</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: rgba(255, 255, 255, 0.7);">Jogos na Rodada</span>
+                                <span style="font-weight: bold; color: var(--cor-destaque);">8</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: rgba(255, 255, 255, 0.7);">Times Ativos</span>
+                                <span style="font-weight: bold; color: var(--cor-texto);">16</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                <span style="color: rgba(255, 255, 255, 0.7);">Maior Goleada</span>
+                                <span style="font-weight: bold; color: var(--cor-atencao);">7-0</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
