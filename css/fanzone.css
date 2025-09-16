@@ -1,0 +1,312 @@
+:root {
+    --cor-primaria: #4B0082;
+    --cor-secundaria: #8A2BE2;
+    --cor-terciaria: #27053f;
+    --text-color: #fff;
+    --card-bg: rgba(0, 0, 0, 0.3);
+    --border-radius: 10px;
+    --card-bg-jogadora: rgba(255, 255, 255, 0.1);
+    --cor-destaque: #FF6B9D;
+    --cor-sucesso: #10B981;
+    --cor-atencao: #F59E0B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: var(--cor-primaria);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--text-color);
+    font-family: teko, sans-serif;
+    line-height: 30px;
+}
+
+.junto {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: teko, sans-serif;
+    line-height: 30px;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    padding-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--cor-terciaria);
+}
+
+/* Seu comentario */
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+button {
+    align-self: flex-end;
+    background: #4B0082;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6A0DAD;
+}
+
+
+/* FanZone Posts */
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.post-card {
+    background: var(--card-bg-jogadora);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(75, 0, 130, 0.3);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.post-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cor-secundaria);
+}
+
+.post-author {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.post-role {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.post-content {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 0.5rem;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Sidebar lists */
+
+.sidebar{
+    margin-top: 2rem;
+    padding: 1rem;
+    background: var(--card-bg); 
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.top-players,
+.popular-posts {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.top-players li,
+.popular-posts li {
+    background: var(--card-bg, rgba(255, 255, 255, 0.08));
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+    color: var(--text-color, #fff);
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* Efeito hover */
+.top-players li:hover,
+.popular-posts li:hover {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Avatar opcional (se quiser colocar foto dos jogadores/posts) */
+.top-players li::before,
+.popular-posts li::before {
+    content: "⭐"; /* pode trocar por ícone ou imagem */
+    margin-right: 0.6rem;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .search-container {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center; 
+        width: 100%;         
+    }
+
+    .nav-link {
+        font-size: .9rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+}

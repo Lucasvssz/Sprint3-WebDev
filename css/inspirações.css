@@ -1,0 +1,381 @@
+:root {
+    --cor-primaria: #4B0082;
+    --cor-secundaria: #8A2BE2;
+    --cor-terciaria: #27053f;
+    --text-color: #fff;
+    --card-bg: rgba(0, 0, 0, 0.3);
+    --border-radius: 10px;
+    --card-bg-jogadora: rgba(255, 255, 255, 0.1);
+    --cor-destaque: #FF6B9D;
+    --cor-sucesso: #10B981;
+    --cor-atencao: #F59E0B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-terciaria));
+    min-height: 100vh;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: var(--text-color);
+    line-height: 30px;
+}
+
+.junto{
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-color);
+    line-height: 30px;
+}
+
+.search-container {
+    flex: 1;
+    max-width: 400px;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: var(--border-radius);
+    background: var(--card-bg);
+    backdrop-filter: blur(10px);
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 50px;
+    height: 50px;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-icon:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.navigation {
+    padding-bottom: 1rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--cor-terciaria);
+    background: rgba(255,255,255,0.05);
+    border-radius: var(--border-radius);
+}
+
+/* MAIN  */
+.secao-hero {
+    text-align: center;
+    padding: 4rem 0;
+    background: linear-gradient(45deg, var(--cor-primaria), var(--cor-secundaria));
+}
+
+.titulo-principal {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    
+}
+
+.subtitulo-principal {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+}
+
+.secao-inspiracoes {
+    padding: 4rem 0;
+}
+
+.titulo-secao {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--cor-destaque);
+}
+
+.grid-historias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card-historia {
+    background: var(--card-bg-jogadora);
+    backdrop-filter: blur(15px);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-historia::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--cor-destaque), var(--cor-secundaria));
+}
+
+.card-historia:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--cor-destaque);
+}
+
+.foto-jogadora {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(45deg, var(--cor-destaque), var(--cor-secundaria));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nome-jogadora {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--cor-destaque);
+    text-align: center;
+}
+
+.posicao-jogadora {
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+.historia-texto {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+}
+
+.conquistas {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-sucesso);
+    margin-top: 2rem;
+}
+
+.conquistas h4 {
+    color: var(--cor-sucesso);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lista-conquistas {
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.lista-conquistas li {
+    margin-bottom: 0.3rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.lista-conquistas li::before {
+    content: '🏆';
+    position: absolute;
+    left: 0;
+}
+
+.card-destaque {
+    grid-column: span 2;
+    background: linear-gradient(135deg, var(--card-bg-jogadora), rgba(255, 107, 157, 0.1));
+    padding-bottom: 2rem;
+}
+
+.citacao {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--cor-destaque);
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.citacao::before {
+    content: '"';
+    font-size: 3rem;
+    color: var(--cor-destaque);
+    line-height: 1;
+}
+
+.citacao::after {
+    content: '"';
+    font-size: 3rem;
+    color: var(--cor-destaque);
+    line-height: 1;
+}
+
+.estatisticas-rapidas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+}
+
+.stat-numero {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor-destaque);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rodape {
+    background: var(--cor-terciaria);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/* Reponsivo */
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .search-container {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center; 
+        width: 100%;         
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+
+    .grid-historias {
+        grid-template-columns: 1fr;
+    }
+
+    .card-destaque {
+        grid-column: span 1;
+    }
+
+    .estatisticas-rapidas {
+        grid-template-columns: 1fr;
+    }
+}
